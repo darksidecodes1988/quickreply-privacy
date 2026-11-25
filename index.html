@@ -1,12 +1,336 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickReply – Datenschutz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickReply – Datenschutzerklärung</title>
+  <meta name="description" content="Datenschutzerklärung für QuickReply">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.65;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1, h2 { color: #172b4d; }
+    h1 { border-bottom: 2px solid #ddd; padding-bottom: 12px; }
+    h2 { margin-top: 30px; }
+    a { color: #1756a9; }
+    footer {
+      margin-top: 45px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <h1>QuickReply</h1>
-    <p>Datenschutzerklärung folgt.</p>
+
+<h1>Datenschutzerklärung für QuickReply</h1>
+<p><strong>Stand: 25. November 2026</strong></p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+Verantwortlich für die Verarbeitung personenbezogener Daten im Zusammenhang
+mit QuickReply ist:
+</p>
+<p>
+Kevin Selzer<br>
+Markwaldstraße 4<br>
+63073 Offenbach am Main<br>
+Deutschland
+</p>
+<p>
+E-Mail: <a href="mailto:service@darksidecodes.de">service@darksidecodes.de</a>
+</p>
+
+<h2>2. Allgemeines zu QuickReply</h2>
+<p>
+QuickReply ist eine Android-Anwendung, die ausschließlich vom Verantwortlichen
+für die Abwicklung eigener Verkäufe digitaler Güter über eBay eingesetzt wird.
+Die Anwendung dient der Unterstützung bei der Verarbeitung bezahlter
+Bestellungen, der Zuordnung von Aktivierungscodes und dem vorgesehenen
+Versand dieser Codes über das eBay-Nachrichtensystem.
+</p>
+<p>
+QuickReply ist keine allgemein zugängliche Verkaufsplattform und wird nicht
+zur Verarbeitung von Bestellungen fremder Verkäufer eingesetzt.
+</p>
+
+<h2>3. Welche Daten verarbeitet werden</h2>
+<p>
+Je nach Funktionsumfang und Nutzung können insbesondere folgende Daten
+verarbeitet werden:
+</p>
+<ul>
+  <li>eBay-Bestellnummern und Bestellkennungen</li>
+  <li>eBay-Benutzernamen von Käufern</li>
+  <li>Bestellmengen und bestellte Artikelinformationen</li>
+  <li>Zahlungs- und Bearbeitungsstatus einer Bestellung</li>
+  <li>Zeitpunkte der Bestellung und ihrer Verarbeitung</li>
+  <li>Zuordnung von Aktivierungscodes zu Bestellungen</li>
+  <li>Aktivierungscodes, die vom Verantwortlichen selbst importiert werden</li>
+  <li>Versand- und Bearbeitungsstatus der zugeordneten Codes</li>
+</ul>
+<p>
+QuickReply benötigt für den vorgesehenen Ablauf grundsätzlich keine
+Käuferanschriften, Telefonnummern oder privaten E-Mail-Adressen.
+</p>
+
+<h2>4. Zwecke und Rechtsgrundlagen der Verarbeitung</h2>
+<p>
+Die Verarbeitung erfolgt zur Durchführung und Abwicklung von Kaufverträgen,
+zur Bereitstellung der bestellten digitalen Güter sowie zur Verwaltung der
+dazugehörigen Bestellungen.
+</p>
+<p>
+Rechtsgrundlagen sind insbesondere:
+</p>
+<ul>
+  <li>Art. 6 Abs. 1 lit. b DSGVO – Verarbeitung zur Erfüllung eines Vertrags
+  oder zur Durchführung vorvertraglicher Maßnahmen.</li>
+  <li>Art. 6 Abs. 1 lit. c DSGVO – Erfüllung gesetzlicher Verpflichtungen,
+  soweit diese im Einzelfall bestehen.</li>
+  <li>Art. 6 Abs. 1 lit. f DSGVO – berechtigte Interessen an einer sicheren
+  und zuverlässigen Verwaltung der eigenen Verkaufsvorgänge.</li>
+</ul>
+
+<h2>5. Lokale Datenverarbeitung auf dem Smartphone</h2>
+<p>
+QuickReply ist für die Nutzung auf dem eigenen Android-Smartphone des
+Verantwortlichen vorgesehen. Bestellinformationen, Käuferkennungen,
+Codebestände und Codezuordnungen werden lokal auf diesem Gerät verarbeitet
+und in einer lokalen Datenbank gespeichert.
+</p>
+<p>
+Die Bestell- und Aktivierungscodedaten werden nicht zur dauerhaften
+Speicherung an den Cloudflare Worker übertragen. Der Worker dient nicht als
+zentrale Bestell- oder Code-Datenbank.
+</p>
+<p>
+Die lokal gespeicherten Daten werden nur so lange aufbewahrt, wie sie für
+die Abwicklung der Verkäufe und die erforderliche Nachbearbeitung benötigt
+werden. Nicht mehr benötigte operative Daten können vom Verantwortlichen
+lokal gelöscht werden.
+</p>
+
+<h2>6. Verbindung zu eBay und eBay-API</h2>
+<p>
+QuickReply verbindet sich mit den eBay-Schnittstellen (APIs), um Bestellungen
+des eigenen Verkäuferkontos abzurufen und deren Status zu verarbeiten.
+Hierfür wird eine OAuth-Autorisierung des jeweiligen eBay-Kontos verwendet.
+</p>
+<p>
+Die Anwendung ist für zwei getrennte Umgebungen vorgesehen:
+eBay Sandbox (Testumgebung) und eBay Produktion (Live-Umgebung).
+Es wird jeweils die vom Verantwortlichen ausgewählte Umgebung verwendet.
+</p>
+<p>
+Nach entsprechender Freischaltung ist vorgesehen, über die eBay-Messaging-API
+Nachrichten mit den zu einer Bestellung gehörenden Aktivierungscodes an den
+jeweiligen Käufer zu übermitteln.
+Ein Nachrichtenversand soll nur im Rahmen der vom Verantwortlichen
+freigegebenen Anwendungsvorgänge erfolgen. Ein eigenständiger Versand ohne
+die dafür vorgesehene Freigabe ist nicht Zweck der Anwendung.
+</p>
+<p>
+Die Übermittlung der Nachrichten erfolgt über die Infrastruktur von eBay.
+Dabei gelten zusätzlich die Datenschutzbestimmungen von eBay:
+<a href="https://www.ebay.de/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260" target="_blank" rel="noopener noreferrer">eBay-Datenschutzerklärung</a>.
+</p>
+
+<h2>7. Cloudflare Worker und OAuth-Tokens</h2>
+<p>
+Für die OAuth-Authentifizierung und die Erneuerung von eBay-Zugriffstokens
+wird ein Cloudflare Worker eingesetzt.
+</p>
+<p>
+Dort werden insbesondere folgende Informationen verarbeitet bzw.
+gespeichert:
+</p>
+<ul>
+  <li>eBay-OAuth-Refresh-Tokens zur Erneuerung von Zugriffstokens</li>
+  <li>Ein kryptografischer Hash des Geräte-Tokens zur Authentifizierung
+  des eigenen Smartphones</li>
+  <li>Kurzzeitig gespeicherte OAuth-Vorgangsdaten zur Absicherung des
+  Anmeldevorgangs</li>
+  <li>Öffentliche eBay-Signaturschlüssel zur Prüfung von
+  Kontolöschungsbenachrichtigungen</li>
+</ul>
+<p>
+Der Worker dient nicht zur dauerhaften Speicherung von Käuferbestellungen,
+Käuferanschriften oder Aktivierungscodes.
+</p>
+
+<h2>8. eBay-Kontolöschungsbenachrichtigungen</h2>
+<p>
+QuickReply unterstützt die Verarbeitung von Benachrichtigungen, die eBay
+im Zusammenhang mit der Löschung eines eBay-Kontos übermittelt.
+</p>
+<p>
+Hierbei können insbesondere die eBay-Benutzerkennung, die unveränderliche
+eBay-Nutzer-ID, eine Benachrichtigungskennung und der Ereigniszeitpunkt
+verarbeitet werden.
+</p>
+<p>
+Der Cloudflare Worker nimmt diese Benachrichtigungen entgegen, prüft ihre
+Authentizität und speichert sie vorübergehend in einer Cloudflare-D1-Datenbank,
+bis sie von der Anwendung abgerufen und verarbeitet werden.
+Nach erfolgreicher Verarbeitung werden die Einträge als verarbeitet
+gekennzeichnet und nach sieben Tagen gelöscht.
+</p>
+<p>
+Die Anwendung prüft anhand der übermittelten Kennungen, ob die betroffenen
+Daten zu einem Käufer aus den eigenen lokalen Verkaufsdaten gehören.
+Entsprechende lokale Daten werden im Rahmen der vorgesehenen
+Löschverarbeitung entfernt. Benachrichtigungen zu fremden Konten werden
+ignoriert.
+</p>
+
+<h2>9. Rechnungsstellung</h2>
+<p>
+Die Rechnungsstellung und die gesetzlich erforderliche Aufbewahrung von
+Rechnungen erfolgen getrennt von QuickReply über den Dienst Easybill.
+QuickReply dient nicht als Rechnungsarchiv.
+</p>
+<p>
+Für die Verarbeitung durch Easybill gelten ergänzend die Datenschutz-
+bestimmungen des jeweiligen Anbieters.
+</p>
+
+<h2>10. Empfänger und eingesetzte Dienstleister</h2>
+<p>
+Im Rahmen der beschriebenen Funktionen können Daten an folgende Anbieter
+übermittelt werden:
+</p>
+<ul>
+  <li><strong>eBay:</strong> Abruf und Verarbeitung von Bestellungen sowie
+  gegebenenfalls Übermittlung von Nachrichten und Aktivierungscodes.</li>
+  <li><strong>Cloudflare:</strong> Bereitstellung des Workers und der
+  D1-Datenbank für OAuth-Funktionen und Kontolöschungsbenachrichtigungen.</li>
+  <li><strong>GitHub:</strong> Hosting dieser Datenschutzerklärungsseite.</li>
+  <li><strong>Easybill:</strong> Getrennte Rechnungsstellung und
+  Rechnungsverwaltung.</li>
+</ul>
+<p>
+Eine Weitergabe an andere Dritte zu Werbe- oder Analysezwecken findet durch
+den Verantwortlichen nicht statt.
+</p>
+
+<h2>11. Drittlandübermittlungen</h2>
+<p>
+Bei der Nutzung von eBay, Cloudflare, GitHub und Easybill kann eine
+Verarbeitung personenbezogener Daten außerhalb der Europäischen Union
+bzw. des Europäischen Wirtschaftsraums nicht ausgeschlossen werden.
+</p>
+<p>
+Die jeweilige Verarbeitung richtet sich nach den Datenschutzbedingungen
+und den vertraglichen Datenschutzregelungen der eingesetzten Anbieter.
+Soweit erforderlich, müssen geeignete Garantien für eine solche
+Datenübermittlung bestehen.
+</p>
+
+<h2>12. Speicherdauer und Löschung</h2>
+<p>
+Personenbezogene Daten werden nur so lange gespeichert, wie dies für die
+genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten
+bestehen.
+</p>
+<p>
+Operative Bestell- und Käuferdaten werden lokal auf dem Smartphone
+verarbeitet. Nach Abschluss der Verkaufsvorgänge und Wegfall des
+Verarbeitungszwecks sollen nicht mehr benötigte lokale Daten gelöscht werden.
+</p>
+<p>
+Gesetzlich aufzubewahrende Rechnungsunterlagen werden unabhängig davon
+über Easybill verwaltet und nach den jeweils geltenden gesetzlichen
+Fristen aufbewahrt.
+</p>
+
+<h2>13. Keine Analyse, kein Tracking</h2>
+<p>
+QuickReply verwendet nach dem vorgesehenen Funktionsumfang keine
+Werbetracker, keine Analyse- oder Marketingdienste und keine externen
+Crash-Reporting-Dienste.
+</p>
+<p>
+Es werden durch den Verantwortlichen keine Nutzungsprofile zu Werbe-
+oder Analysezwecken erstellt.
+</p>
+
+<h2>14. Cookies und diese Website</h2>
+<p>
+Diese Datenschutzerklärung wird als statische Website bereitgestellt.
+Der Verantwortliche setzt auf dieser Seite keine eigenen Analyse-,
+Werbe- oder Tracking-Cookies ein.
+</p>
+<p>
+Beim Aufruf der Website können technisch erforderliche Verbindungsdaten
+durch den Hosting-Anbieter verarbeitet werden. Für diese Verarbeitung
+gelten ergänzend dessen Datenschutzinformationen.
+</p>
+
+<h2>15. Rechte betroffener Personen</h2>
+<p>
+Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen
+insbesondere folgende Rechte:
+</p>
+<ul>
+  <li>Recht auf Auskunft gemäß Art. 15 DSGVO</li>
+  <li>Recht auf Berichtigung gemäß Art. 16 DSGVO</li>
+  <li>Recht auf Löschung gemäß Art. 17 DSGVO</li>
+  <li>Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+  <li>Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+  <li>Recht auf Widerspruch gemäß Art. 21 DSGVO</li>
+</ul>
+<p>
+Zur Ausübung dieser Rechte kann der Verantwortliche über die oben
+angegebene E-Mail-Adresse kontaktiert werden.
+</p>
+
+<h2>16. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+<p>
+Betroffene Personen haben das Recht, sich bei einer Datenschutz-
+Aufsichtsbehörde über die Verarbeitung ihrer personenbezogenen Daten
+zu beschweren.
+</p>
+<p>
+Für den Verantwortlichen ist insbesondere folgende Behörde zuständig:
+</p>
+<p>
+Der Hessische Beauftragte für Datenschutz und Informationsfreiheit<br>
+<a href="https://datenschutz.hessen.de/" target="_blank" rel="noopener noreferrer">https://datenschutz.hessen.de/</a>
+</p>
+
+<h2>17. Datensicherheit</h2>
+<p>
+Der Verantwortliche trifft angemessene technische und organisatorische
+Maßnahmen, um personenbezogene Daten vor unberechtigtem Zugriff,
+Verlust und Manipulation zu schützen.
+</p>
+<p>
+Dazu gehören insbesondere die lokale Speicherung auf dem eigenen
+Smartphone, die geschützte Speicherung von Authentifizierungsdaten
+und die Beschränkung des Zugriffs auf den Verantwortlichen.
+</p>
+
+<h2>18. Änderungen dieser Datenschutzerklärung</h2>
+<p>
+Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen
+von QuickReply, die eingesetzten Dienstleister oder die rechtlichen
+Anforderungen ändern.
+</p>
+
+<footer>
+  QuickReply – Datenschutzerklärung<br>
+  Verantwortlicher: Kevin Selzer<br>
+  Stand: 25. November 2026
+</footer>
+
 </body>
 </html>
